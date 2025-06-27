@@ -1,33 +1,22 @@
-import { connect } from 'react-redux';
 import './App.css'
-import { buyCake } from './redux/cake/CakeActionCreator';
-import Store from './redux/components/Store';
+import CakeComponentWithHooks from './redux/components/CakeComponentWithHooks';
+import NewItemComponent from './redux/components/NewItemComponent';
+import SweetComponentWithHooks from './redux/components/SweetComponentWithHooks';
+import UsersContainer from './redux/components/UsersContainer';
 function App(props) {
   return (
     <>
-      {/* <h1>Number of cakes is {props.NumberOfCake}</h1>
-      <div className="card">
-        <button onClick={props.buyCake}>
-          Buy Cake
-        </button>
-      </div>
-      <div>---------------------------------------</div> */}
-      <h2>With Hooks</h2>
-    <Store/>
+    {/* <CakeComponentWithHooks/>
+      <br />
+      <br />
+    <NewItemComponent cake />
+      <br />
+      <br />
+    <SweetComponentWithHooks/> */}
+    <UsersContainer/>
     </>
   )
 }
-const getCake = (state)=>{
-  return{
-    NumberOfCake: state.NumberOfCake
-  }
-}
-
-const DispatchBuyCake = (dispatch)=>{
-  return{
-    buyCake : ()=> dispatch(buyCake())
-  }
-}
 
 
-export default connect(getCake,DispatchBuyCake)(App)
+export default App;

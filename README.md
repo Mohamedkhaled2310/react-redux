@@ -1,28 +1,67 @@
 # 🎂 Cake Store – React + Redux + Vite
 
-This project is a simple and responsive **Cake Store** application built using **React** and **Redux**, powered by **Vite** for fast development with HMR (Hot Module Replacement).
+A simple and responsive Cake Store application built with **React** and **Redux**, powered by **Vite** for fast development and hot module replacement.
 
-## ⚙️ Tech Stack
+## 🚀 Features
+
+- 🍰 Browse and buy cakes and sweets
+- 🛒 Manage cart state using Redux
+- ⚡ Fast development with Vite
+- 🔄 Demonstrates Redux usage with and without React hooks
+- 👥 Fetch and display users from an API using Redux Thunk
+
+## 🛠️ Tech Stack
 
 - **React** – UI development
 - **Redux** – State management
+- **Redux Thunk** – Async actions
+- **Redux Logger** – Debugging middleware
 - **Vite** – Lightning-fast build tool
-- **ESLint** – Code linting for clean and consistent codebase
+- **ESLint** – Code linting
 
-## 🔌 Vite Plugins
+## 📦 Project Structure
 
-This project uses one of the official Vite plugins:
+```
+src/
+  App.jsx
+  main.jsx
+  redux/
+    ShopStore.js
+    cake/
+      ActionsType.js
+      CakeActionCreator.js
+      Cakereducers.js
+    sweet/
+      ActionsType.js
+      SweetActionCreator.js
+      SweetReducer.js
+    user/
+      ActionsType.js
+      ActionsCreator.js
+      Reducer.js
+    components/
+      CakeComponentWithHooks.jsx
+      SweetComponentWithHooks.jsx
+      NewItemComponent.jsx
+      UsersContainer.jsx
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react): Uses **Babel** for Fast Refresh
+## 🧑‍💻 Getting Started
 
-> You can also swap this with [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) for faster builds using **SWC**.
+1. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+2. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+3. **Open** [http://localhost:5173](http://localhost:5173) **in your browser.**
 
-## 📦 Features
+## 🤝 Contributing
 
-- 🍰 Browse a variety of cakes
-- 📦 Manage cart state using Redux
-- 💡 Optimized for performance and developer experience
+Feel free to fork, contribute, and customize this Cake Store as you like! 🍰
 
+---
 
-
-Feel free to contribute, fork, and customize this Cake Store as you like! 🍰
+Built with ❤️ using React,
